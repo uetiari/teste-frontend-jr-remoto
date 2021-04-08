@@ -1,63 +1,71 @@
+main {
+    color: $dark-blue; 
+    padding: 0 0 1rem;
+    margin: 0 1rem 0 1rem;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1rem;        
+}
+
+.leads__contact {
+    background-color: $grey; 
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding: 0.5rem 1rem; 
+    margin: 0.7rem 0;
+    border-radius: 0.3rem;
+    width: 95%;
+}
+
+.leads__userphoto {
+    height: auto;
+    margin: 1rem;
+}
+.leads__info {
+    margin-left: 1rem;
+}
 
 /* xs - extra-small */
 @media (max-width: 767px) {
-    main {
-        color: $dark-blue; 
-        padding: 0 0 1rem;
-        margin: 0 1rem 0 1rem;
-        text-align: left;
-        font-weight: normal;
-        font-size: 1rem;        
-    }
-
+    
     .leads__userphoto {
-        width: 1rem;
-        height: auto;
-        margin: 1rem;
+        width: 25%;
     
     }
-
-    .leads__contact {
-        background-color: $grey;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        text-align: left;
-        padding: 0.5rem 1rem; 
-        margin: 0.7rem 0;
-        border-radius: 0.3rem;
+    .leads__info {
+        width: 60%;
     }
 
-    .leads__info, .leads__address {
-        margin-left: 2rem;
-    }
-    
-    ul > li{
-        list-style-type: none;
+    .leads__address {
+        display: none;
     }
 }
 
-// /* sm - small */
-// @media screen and (min-width: 768px) and (max-width: 991px) {
-//     thead, tbody{    
-//         font-size: 0.7rem;
-//     }
-// }
+/* sm - small */
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
-// table thead th {
-//     background: $dark-blue;
-//     color: $grey; 
-//     padding: 0.5rem 1rem; 
-//     text-align: left;
-//     font-weight: normal;
-//     font-size: 1rem;
-// }
+    .leads__userphoto {
+        width: 25%;
+    }
 
-// table tbody tr {
-//     opacity: 0.7;
-// }
+    .leads__info {
+        width: 40%;
+    }
 
-// table tbody td {
-//     padding: 0.5rem; 
-// }
+    .leads__address {
+        width: 30%;
+        margin-left: 1.5rem;
+    }
 
+}
+
+/* md - medium */
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+
+}
+/* lg - large */
+@media screen and (min-width: 1280px) {
+
+}

@@ -12,6 +12,10 @@ a:hover {
   color: $light-blue;
 }
 
+ul > li{
+  list-style-type: none;
+}
+
 /* xs - extra-small */
 @media (max-width: 767px) {
   h1 {
@@ -20,9 +24,7 @@ a:hover {
     padding: 0;
     margin-left: 1rem;
   }
-
 }
-
 
 /* sm - small */
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -31,7 +33,14 @@ a:hover {
     font-weight: 200;
   }
 }
+/* md - medium */
+@media screen and (min-width: 992px) and (max-width: 1279px) {
 
+}
+/* lg - large */
+@media screen and (min-width: 1280px) {
+
+}
 // /* lg - large */
 // @media screen and (min-width: 1280px) {
 //   h1 {

@@ -33,20 +33,20 @@ function show(users) {
       </div>
       <div class="leads__info">
         <ul>
-          <li>Name: ${user.name}</li>
-          <li>Email: ${user.email}</li>
-          <li>Phone: ${user.phone}</li>
-          <li>Website: 
+          <li><b>Name:</b> ${user.name}</li>
+          <li><b>Email:</b> ${user.email}</li>
+          <li><b>Phone:</b> ${user.phone}</li>
+          <li><b>Website:</b> 
             <a href="${user.website}" target="_blank">${user.website}</a></li>
-          <li>Company: ${user.company.name}</li>
+          <li><b>Company:</b> ${user.company.name}</li>
         </ul>
       </div>
       <div class="leads__address">
         <ul>
-          <li>Street: ${user.address.street}</li>
-          <li>Suite: ${user.address.suite}</li>
-          <li>City: ${user.address.city}</li>
-          <li>Zip Code: ${user.address.zipcode}</li>
+          <li><b>Street:</b> ${user.address.street}</li>
+          <li><b>Suite:</b> ${user.address.suite}</li>
+          <li><b>City:</b> ${user.address.city}</li>
+          <li><b>Zip Code:</b> ${user.address.zipcode}</li>
         </ul>
       </div>
     </div>
