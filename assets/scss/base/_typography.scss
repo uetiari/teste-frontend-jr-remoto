@@ -1,10 +1,43 @@
 body {
   font-family: 'Roboto', sans-serif;
-  color: $default;
+  color: $dark-blue;
 }
 
-h1 {
-    font-size: 1rem;
+a {
+  text-decoration: none;
+  color: $blue;
+}
+
+a:hover {
+  color: $light-blue;
+}
+
+/* xs - extra-small */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0;
+    margin-left: 1rem;
+  }
+
+}
+
+
+/* sm - small */
+@media screen and (min-width: 768px) and (max-width: 991px){
+  h1 {
+    font-size: 1.3rem;
     font-weight: 200;
   }
+}
+
+// /* lg - large */
+// @media screen and (min-width: 1280px) {
+//   h1 {
+//     font-size: 1rem;
+//     font-weight: 200;
+//   }
+// }
+
 
