@@ -64,6 +64,18 @@ main {
 /* md - medium */
 @media screen and (min-width: 992px) and (max-width: 1279px) {
 
+    .leads__userphoto {
+        width: 25%;
+    }
+
+    .leads__info {
+        width: 35%;
+    }
+
+    .leads__address {
+        width: 30%;
+        margin-left: 1.8rem;
+    }
 }
 /* lg - large */
 @media screen and (min-width: 1280px) {

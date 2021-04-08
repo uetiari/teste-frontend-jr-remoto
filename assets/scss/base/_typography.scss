@@ -19,34 +19,28 @@ ul > li{
 /* xs - extra-small */
 @media (max-width: 767px) {
   h1 {
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1.3rem;
     padding: 0;
-    margin-left: 1rem;
   }
 }
 
 /* sm - small */
 @media screen and (min-width: 768px) and (max-width: 991px){
   h1 {
-    font-size: 1.3rem;
-    font-weight: 200;
+    font-size: 1.6rem;
   }
 }
 /* md - medium */
 @media screen and (min-width: 992px) and (max-width: 1279px) {
-
+  h1 {
+    font-size: 1.7rem;
+  }
 }
 /* lg - large */
 @media screen and (min-width: 1280px) {
-
+  h1 {
+    font-size: 1.8rem;
+  }
 }
-// /* lg - large */
-// @media screen and (min-width: 1280px) {
-//   h1 {
-//     font-size: 1rem;
-//     font-weight: 200;
-//   }
-// }
 
 
