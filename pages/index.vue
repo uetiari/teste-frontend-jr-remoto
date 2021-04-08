@@ -3,13 +3,18 @@
     <Logo />
     <!-- <Logo dark-background /> -->
     <h1 class="leads__title">Leads</h1>
-    <main>
+    <div class="searchbox">
+      <input type="text" id="search_name" name="name" placeholder="Search by Name" />
       
+      <input type="text" id="search_name" name="company" placeholder="Search by Company Categories" />
+    </div>
+    <main>
     </main>
   </div>
 </template>
 
 <script>
+
 async function getContent() {
   try {
     const response = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -29,7 +34,7 @@ function show(users) {
     output += `
     <div class="leads__contact">
       <div class="leads__userphoto">
-        <User />
+    <!-- Foto do usuário -->
       </div>
       <div class="leads__info">
         <ul>
@@ -55,6 +60,11 @@ function show(users) {
 
   document.querySelector('main').innerHTML = output
 }
+
+function filterByName() {
+
+}
+
 </script>
 
 <style lang="scss" scoped="true">
