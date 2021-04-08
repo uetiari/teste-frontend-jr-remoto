@@ -79,5 +79,15 @@ main {
 }
 /* lg - large */
 @media screen and (min-width: 1280px) {
+    .leads__userphoto {
+        width: 19%;
+    }
 
+    .leads__info {
+        width: 38%;
+    }
+
+    .leads__address {
+        width: 38%;
+    }
 }
