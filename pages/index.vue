@@ -4,9 +4,10 @@
     <!-- <Logo dark-background /> -->
     <h1 class="leads__title">Leads</h1>
     <div class="searchbox">
+      
       <input type="text" id="search_name" name="name" placeholder="Search by Name" />
       
-      <input type="text" id="search_name" name="company" placeholder="Search by Company Categories" />
+      <input type="text" id="search_category" name="category" placeholder="Search by Company Categories" />
     </div>
     <main>
     </main>
@@ -14,7 +15,13 @@
 </template>
 
 <script>
-
+export default {
+  data() {
+    return {
+      images: ['https://www.flaticon.com/svg/vstatic/svg/1177/1177568.svg?token=exp=1617926401~hmac=050ce4b35bb7e1bee767abd39a651d09']
+    }
+  }
+}
 async function getContent() {
   try {
     const response = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -34,7 +41,7 @@ function show(users) {
     output += `
     <div class="leads__contact">
       <div class="leads__userphoto">
-    <!-- Foto do usuário -->
+        <!-- Foto do usuário -->
       </div>
       <div class="leads__info">
         <ul>
@@ -61,9 +68,6 @@ function show(users) {
   document.querySelector('main').innerHTML = output
 }
 
-function filterByName() {
-
-}
 
 </script>
 
